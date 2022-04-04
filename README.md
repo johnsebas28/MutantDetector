@@ -86,7 +86,6 @@ spring.jpa.hibernate.ddl-auto=update</code></pre>
 3. Entrar a la carpeta del proyecto (Root Path) para compilarlo y hostearlo a través del siguiente comando (Windows)<br>
 `.\mvnw.cmd spring-boot:run` 
 4. El proyecto está configurado para abrir en el puerto 5000<br>
-`.\mvnw.cmd spring-boot:run` <br>
 Cuando el proyecto compila, se crea la Base de datos en AWS Gracias a JPS.Hibernate. <br>
 `spring.jpa.hibernate.ddl-auto=update`
 
