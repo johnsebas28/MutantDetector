@@ -77,7 +77,7 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 2. Entrar a la carpeta del proyecto para compilarlo y hostearlo a través del siguiente comando (Windows)<br>
 `.\mvnw.cmd spring-boot:run` 
 3. Cambiar variables de configuración. Abrir el archivo `application.properties` ubicado en el path `src\main\resources` <br>
-`server.port=5000
+`server.port=5000 <br>
 spring.datasource.url=[Your Mysql Database URL ]
 spring.datasource.username=[YourUser]
 spring.datasource.password=[yourPassword]
