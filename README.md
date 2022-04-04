@@ -6,7 +6,7 @@
 - [Apoyo y documentación](###Apoyo-y-documentación)
 - [Documentación API](###Documentación-API)
 - [Instalación](###Instalación)
-- Pruebas JACOCO
+- [Pruebas JACOCO](###Pruebas-JACOCO)
 
 ---
 
@@ -28,7 +28,7 @@ En este caso el llamado a la función isMutant(dna) devuelve “true”.
 ### Apoyo y documentación
 [Java - reactive](https://www.youtube.com/watch?v=i0lJZeLdAi8&ab_channel=miw-upm) <br>
 [baeldung](https://www.baeldung.com/)
-
+[JACOCO](https://github.com/jacoco/jacoco)
 ---
 
 ### Documentación API
@@ -71,12 +71,11 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 - Java jdk 11.0.13
 - apache-maven-3.8.5
 
-
+#### Instrucciones:
 1. Clonar el repositorio <br>
 `git clone https://github.com/johnsebas28/MutantDetector.git`
-2. Entrar a la carpeta del proyecto para compilarlo y hostearlo a través del siguiente comando (Windows)<br>
-`.\mvnw.cmd spring-boot:run` 
-3. Cambiar variables de configuración. Abrir el archivo `application.properties` ubicado en el path `src\main\resources` <br>
+
+2. Cambiar variables de configuración. Abrir el archivo `application.properties` ubicado en el path `src\main\resources` <br>
 
 <pre><code>server.port=5000
 spring.datasource.url=[Your Mysql Database URL ]
@@ -84,8 +83,22 @@ spring.datasource.username=[YourUser]
 spring.datasource.password=[yourPassword]
 spring.jpa.hibernate.ddl-auto=update</code></pre>
 
-5. El proyecto está configurado para abrir en el puerto 5000<br>
+3. Entrar a la carpeta del proyecto (Root Path) para compilarlo y hostearlo a través del siguiente comando (Windows)<br>
+`.\mvnw.cmd spring-boot:run` 
+4. El proyecto está configurado para abrir en el puerto 5000<br>
 `.\mvnw.cmd spring-boot:run` <br>
 Cuando el proyecto compila, se crea la Base de datos en AWS Gracias a JPS.Hibernate. <br>
 `spring.jpa.hibernate.ddl-auto=update`
 
+---
+
+###Pruebas JACOCO
+Para realizar las pruebas y obtener el porcentaje de cobertura se utlizió la librería Jacoco.
+
+#### Instrucciones:
+1. Entrar a la carpeta del proyecto a través de un terminal (root Path)
+2. Correr el siguiete comando <br>
+   `mvn clean test` <br>
+3. Para conocer el porcentaje de cobertura de las pruebas:
+    - Entrar a la ruta `\target\site\jacoco` y abrir el archivo `index.html`
+> Nota: El proyecto cuenta con una cobertura del 92%
