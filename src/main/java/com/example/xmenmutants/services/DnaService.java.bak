@@ -31,14 +31,14 @@ public class DnaService implements IDnaService {
         int mutantStrings = getMutantRows(dnaValues) + getMutantColumns(dnaValues) + getMutantLeftDiagonal(dnaValues)
                 + getMutantRightDiagonal(dnaValues);
         try {
-            createPostDna(mutantStrings, dnaValues);
+            CreatePostDna(mutantStrings, dnaValues);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
         return mutantStrings >= MUTANT_DNA_STRINGS ? true : false;
     }
 
-    private void createPostDna(int mutantStrings, String[] dnaValues) throws JsonProcessingException {
+    private void CreatePostDna(int mutantStrings, String[] dnaValues) throws JsonProcessingException {
 
         StatsModel dnaModel = new StatsModel();
         dnaModel.setDna(objectMapper.writeValueAsString(dnaValues));
