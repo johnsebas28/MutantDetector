@@ -8,6 +8,8 @@
 - Instalación
 - Pruebas JACOCO
 
+---
+
 ### Concepto Prueba
 crear un programa con un método o función con la siguiente firma:<br>
 **boolean isMutant(String[] dna);**<br>
@@ -21,14 +23,30 @@ iguales**, de forma oblicua, horizontal o vertical.<br>
 `String[] dna = {"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"};` <br>
 En este caso el llamado a la función isMutant(dna) devuelve “true”.
 
+---
+
 ### Apoyo y documentación
 [Java - reactive](https://www.youtube.com/watch?v=i0lJZeLdAi8&ab_channel=miw-upm) <br>
 [baeldung](https://www.baeldung.com/)
+
+---
 
 ### Documentación API
 URL Microservicio AWS
 http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 
 #### Métodos
-##### Post -> /mutant/
-Para consumir el método se debe tener en cuenta 
+> ##### Post -> /mutant/
+#### Headers
+`Content-Type:application/json`
+#### Body
+`{
+    "dna": [
+        "ATGCAA",
+        "CAGTGG",
+        "TTATGA",
+        "AGAAGA",
+        "CCCCTA",
+        "CCCCTG"
+    ]
+}`
