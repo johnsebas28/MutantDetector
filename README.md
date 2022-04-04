@@ -36,7 +36,7 @@ URL Microservicio AWS
 http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 
 #### Métodos
-> ##### Post -> /mutant/
+> ##### Post -> /mutant
 > **Headers** <br>
 > `Content-Type:application/json` <br>
 > **Body - Ejemplo** <br>
@@ -54,5 +54,13 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 > - HTTP Status 200-OK (Is mutant)
 > - HTTP Status 403-Forbidden (is Human)
 
-
+> ##### Get -> /stats
+> **Headers** <br>
+> `Content-Type:application/json` <br>
+> #### Response
+>  `{
+    "count_mutant_dna": 6,
+    "count_human_dna": 2,
+    "ratio": 3.0
+} `
 
