@@ -37,9 +37,9 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 
 #### Métodos
 > ##### Post -> /mutant/
-Headers
-`Content-Type:application/json`
-Body - Ejemplo
+Headers <br>
+`Content-Type:application/json` <br>
+Body - Ejemplo <br>
 `{
     "dna": [
         "ATGCAA",
@@ -49,4 +49,4 @@ Body - Ejemplo
         "CCCCTA",
         "CCCCTG"
     ]
-}`
+}`<br>
