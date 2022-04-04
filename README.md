@@ -92,7 +92,7 @@ Cuando el proyecto compila, se crea la Base de datos en AWS Gracias a JPS.Hibern
 
 ---
 
-###Pruebas JACOCO
+### Pruebas JACOCO
 Para realizar las pruebas y obtener el porcentaje de cobertura se utlizió la librería Jacoco.
 
 #### Instrucciones:
@@ -101,4 +101,4 @@ Para realizar las pruebas y obtener el porcentaje de cobertura se utlizió la li
    `mvn clean test` <br>
 3. Para conocer el porcentaje de cobertura de las pruebas:
     - Entrar a la ruta `\target\site\jacoco` y abrir el archivo `index.html`
-> Nota: El proyecto cuenta con una cobertura del 92%
+> **Nota**: El proyecto cuenta con una cobertura del 92%
