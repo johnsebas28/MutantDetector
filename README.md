@@ -30,5 +30,5 @@ En este caso el llamado a la función isMutant(dna) devuelve “true”.
 http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 
 > #### Métodos
->> ##### Post -> /mutant/
->> Para consumir el método se debe tener en cuenta 
+##### Post -> /mutant/
+Para consumir el método se debe tener en cuenta 
