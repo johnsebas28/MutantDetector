@@ -2,7 +2,7 @@
 ### Detector de mutantes - Proyecto de aprendizaje
 
 ## Tabla de contenido
-- [Concepto prueba](#Concepto Prueba)
+- [Concepto prueba](### Concepto Prueba)
 - Apoyo y documentación
 - Documentación API
 - Instalación
