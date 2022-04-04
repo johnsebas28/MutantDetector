@@ -3,8 +3,8 @@
 
 ## Tabla de contenido
 - [Concepto prueba](###Concepto-Prueba)
-- Apoyo y documentación
-- Documentación API
+- [Apoyo y documentación](###Apoyo-y-documentación)
+- [Documentación API](###Documentación-API)
 - Instalación
 - Pruebas JACOCO
 
