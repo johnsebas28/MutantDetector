@@ -37,9 +37,9 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 
 #### Métodos
 > ##### Post -> /mutant/
-> Headers <br>
+> **Headers** <br>
 > `Content-Type:application/json` <br>
-> Body - Ejemplo <br>
+> **Body - Ejemplo** <br>
 > `{
     "dna": [
         "ATGCAA",
@@ -50,9 +50,9 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
         "CCCCTG"
     ]
 }`<br>
-#### Response
-- HTTP Status 200-OK (Is mutant)
-- HTTP Status 403-Forbidden (is Human)
+> #### Response
+> - HTTP Status 200-OK (Is mutant)
+> - HTTP Status 403-Forbidden (is Human)
 
 
 
