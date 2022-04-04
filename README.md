@@ -37,6 +37,7 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 
 #### Métodos
 > ##### Post -> /mutant
+> Recibe una objeto el cual contiene la base nitrogenada del ADN y Devuelve una respuesta http 200-OK si el DNA enviado pertenece a un mutante. de lo contrario, si el DNA es de un humano la respuesta que devolvería es un código http 403-Forbidden
 > **Headers** <br>
 > `Content-Type:application/json` <br>
 > **Body - Ejemplo** <br>
@@ -55,8 +56,6 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 > - HTTP Status 403-Forbidden (is Human)
 
 > ##### Get -> /stats
-> **Headers** <br>
-> `Content-Type:application/json` <br>
 > #### Response - Ejemplo
 >  `{
     "count_mutant_dna": 6,
