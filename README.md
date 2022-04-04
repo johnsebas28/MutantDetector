@@ -71,6 +71,7 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 - Java jdk 11.0.13
 - apache-maven-3.8.5
 
+
 1. Clonar el repositorio <br>
 `git clone https://github.com/johnsebas28/MutantDetector.git`
 2. Entrar a la carpeta del proyecto para compilarlo y hostearlo a través del siguiente comando (Windows)<br>
