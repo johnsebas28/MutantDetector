@@ -57,7 +57,7 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 > ##### Get -> /stats
 > **Headers** <br>
 > `Content-Type:application/json` <br>
-> #### Response
+> #### Response - Ejemplo
 >  `{
     "count_mutant_dna": 6,
     "count_human_dna": 2,
