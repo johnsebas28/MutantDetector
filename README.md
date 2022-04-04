@@ -78,11 +78,11 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 `.\mvnw.cmd spring-boot:run` 
 3. Cambiar variables de configuración. Abrir el archivo `application.properties` ubicado en el path `src\main\resources` <br>
 
-<code>server.port=5000
+<pre><code>server.port=5000
 spring.datasource.url=[Your Mysql Database URL ]
 spring.datasource.username=[YourUser]
 spring.datasource.password=[yourPassword]
-spring.jpa.hibernate.ddl-auto=update</code>
+spring.jpa.hibernate.ddl-auto=update</code></pre>
 
 5. El proyecto está configurado para abrir en el puerto 5000<br>
 `.\mvnw.cmd spring-boot:run` <br>
