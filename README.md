@@ -10,6 +10,15 @@
 
 ### Concepto Prueba
 crear un programa con un método o función con la siguiente firma:<br>
-**boolean isMutant(String[] dna);**
+**boolean isMutant(String[] dna);**<br>
+En donde se recibirá como parámetro un array de Strings que representan cada fila de una tabla
+de (NxN) con la secuencia del ADN. Las letras de los Strings solo pueden ser: (A,T,C,G), las
+cuales representa cada base nitrogenada del ADN.
+Sabrás si un humano es mutante, **si encuentras más de una secuencia de cuatro letras
+iguales**, de forma oblicua, horizontal o vertical.<br>
+
+**Ejemplo Caso mutante:** <br>
+`String[] dna = {"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"};`
+En este caso el llamado a la función isMutant(dna) devuelve “true”.
 
 [Java - reactive](https://www.youtube.com/watch?v=i0lJZeLdAi8&ab_channel=miw-upm)
