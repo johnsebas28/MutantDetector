@@ -9,7 +9,7 @@
 - Pruebas JACOCO
 
 ### Concepto Prueba
->crear un programa con un método o función con la siguiente firma:
->>**boolean isMutant(String[] dna);**
+crear un programa con un método o función con la siguiente firma:
+**boolean isMutant(String[] dna);**
 
 [Java - reactive](https://www.youtube.com/watch?v=i0lJZeLdAi8&ab_channel=miw-upm)
