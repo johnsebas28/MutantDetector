@@ -73,5 +73,16 @@ http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
 
 1. Clonar el repositorio <br>
 `git clone https://github.com/johnsebas28/MutantDetector.git`
-2. Entrar a la carpeta del proyecto para compilar y hostear el proyecto a través del siguiente comando <br>
-`.\mvnw.cmd spring-boot:run` (Windows)
+2. Entrar a la carpeta del proyecto para compilarlo y hostearlo a través del siguiente comando (Windows)<br>
+`.\mvnw.cmd spring-boot:run` 
+3. Cambiar variables de configuración. Abrir el archivo `application.properties` ubicado en el path `src\main\resources` <br>
+`server.port=5000
+spring.datasource.url=[Your Mysql Database URL ]
+spring.datasource.username=[YourUser]
+spring.datasource.password=[yourPassword]
+spring.jpa.hibernate.ddl-auto=update`
+5. El proyecto está configurado para abrir en el puerto 5000<br>
+`.\mvnw.cmd spring-boot:run` <br>
+Cuando el proyecto compila, se crea la Base de datos en AWS Gracias a JPS.Hibernate. <br>
+`spring.jpa.hibernate.ddl-auto=update`
+
