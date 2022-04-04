@@ -27,4 +27,8 @@ En este caso el llamado a la función isMutant(dna) devuelve “true”.
 
 ### Documentación API
 [URL Microservicio AWS](http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/)
-- http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
+http://xmenmutant-env.eba-dqmzwbsa.us-east-1.elasticbeanstalk.com:5000/
+
+> #### Métodos
+>> ##### Post -> /mutant/
+>> Para consumir el método se debe tener en cuenta 
